@@ -1,6 +1,7 @@
 package modelo;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.time.LocalDate;
 
 public class Funcionario {
@@ -27,4 +28,16 @@ public class Funcionario {
         return salario;
     }
 
+
+    public void reajustarSalario(BigDecimal reajuste) {
+        this.salario = this.salario.add(reajuste);
+        arredondarSalario();
+    }
+
+    // se um metodo eh privado, voce nao testa. ele eh utilitario da classe
+    // nao precisa testar separadamente ele. Deixe-o privado mesmo.
+    // ele se testa qnd se executa algum metodo publico.
+    private void arredondarSalario() {
+        this.salario = this.salario.setScale(2, RoundingMode.HALF_UP);
+    }
 }
