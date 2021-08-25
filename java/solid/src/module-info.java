@@ -1,6 +1,10 @@
 module solid {
     /*SOLID
         * Single Responsibility Principle
+            * Principio da responsabilidade Unica
+            * "Uma classe deveria ter apenas um unico motivo para mudar" (Uncle Bob)
+            * Ele busca manter uma auta coesao do codigo, deixando classes pequenas e enxutas
+        *
         * Open Closed Principle
         * Liskov Susbtitution Principle
         * Interface Segragation Principle
