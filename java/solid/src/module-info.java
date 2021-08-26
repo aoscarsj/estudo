@@ -6,11 +6,17 @@ module solid {
             * Ele busca manter uma auta coesao do codigo, deixando classes pequenas e enxutas
         *
         * Open Closed Principle
-        *   "Entidades de software (classes, módulos, funcoes, etc.)
-        *   devem estar abertas p extensao, porem fechadas para modificacao!"
-        *   Deixe-o extensivel, evitando ao maximo mexer para colocar algo novo. O ideal
-        *   eh separar.
+            *   "Entidades de software (classes, módulos, funcoes, etc.)
+            *   devem estar abertas p extensao, porem fechadas para modificacao!"
+            *   Deixe-o extensivel, evitando ao maximo mexer para colocar algo novo. O ideal
+            *   eh separar.
         * Liskov Susbtitution Principle
+            *   Use a abstracao correta! Se tem coisas que nao fazem sentido, nao use, cuidado
+            *   com efeitos colaterais.
+            *   "Se q(x) é uma propriedade demonstrável dos objetos x de tipo T, entao q(y)
+            *   deve ser verdadeiro para objetos y de tipo S, onde S é um subtipo de T."
+            *                       - Barbara Liskov
+            *   Quando a heranca nao fizer sentido, usar composicao.
         * Interface Segragation Principle
         * Dependency Inversion Principle
     *
