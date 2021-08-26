@@ -6,6 +6,10 @@ module solid {
             * Ele busca manter uma auta coesao do codigo, deixando classes pequenas e enxutas
         *
         * Open Closed Principle
+        *   "Entidades de software (classes, módulos, funcoes, etc.)
+        *   devem estar abertas p extensao, porem fechadas para modificacao!"
+        *   Deixe-o extensivel, evitando ao maximo mexer para colocar algo novo. O ideal
+        *   eh separar.
         * Liskov Susbtitution Principle
         * Interface Segragation Principle
         * Dependency Inversion Principle

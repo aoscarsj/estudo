@@ -23,4 +23,8 @@ public class Funcionario {
     public BigDecimal getSalario() {
         return salario;
     }
+
+    public LocalDate getDataUltimoReajuste() {
+        return dataUltimoReajuste;
+    }
 }
