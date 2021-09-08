@@ -42,7 +42,7 @@ public class TopicosController {
    // @RequestMapping(value="/topicos", method = RequestMethod.GET)// para receber param GET, basta pedir o param no metodo
     @GetMapping
     public List<TopicoDto> lista(String nomeCurso){
-        System.out.println(nomeCurso);
+//        System.out.println(nomeCurso);
         // criando os topicos em memoria
 //        Topico topico = new Topico("Dúvida", "Dúvida com Spring", new Curso("Spring", "Programação"));
 //        Topico t = topico;
