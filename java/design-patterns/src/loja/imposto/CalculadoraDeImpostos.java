@@ -6,7 +6,10 @@ import java.math.BigDecimal;
 
 public class CalculadoraDeImpostos {
 
-    public BigDecimal calcular(Orcamento orcamento, Imposto imposto){
-        return imposto.calcular(orcamento);
+    public BigDecimal calcular(Orcamento orcamento){
+        Desconto desconto = new DescontoParaMuitosItens(new DescontoParaValorAlto(
+                new SemDesconto()
+        ));
+        return desconto.calcular(orcamento);
     }
 }
